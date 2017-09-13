@@ -2,8 +2,10 @@
 *{
 	margin: 0 auto;
 	box-sizing: border-box;
+
 }
-body{
+html, body{
+	height: 100%;
 }
 header{
 	z-index: 5;
@@ -44,8 +46,10 @@ nav ul li{
 #fundo{
 	width: 100%;
 	background: url("img/background1.jpg");
-	background-size: 100% 100%;
+	background-size: cover;
 	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 100%; 
 }
 #conteudo{
 	width: 100%;
@@ -59,11 +63,23 @@ nav ul li{
 	margin: 0 auto;
 	text-align: center;
 	width: 100%;
+	height: 50%;
+	background: url(img/background2.jpg) no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	line-height: 50%;
+}
+#moldura{
+	width: 700px;
 	height: 100%;
-	background: #2F4F4F;
-	position: absolute;
+	background: rgba(255, 255, 255, 0.1);
+	padding-top: 2.4%;
 }
 iframe{
-	position:relative;
-	top:100px;
+}
+#contato{
+	background: white;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100%;
 }
