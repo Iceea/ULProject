@@ -12,7 +12,7 @@ var last_known_scroll_position = 0;
 var ticking = false;
 
 document.getElementById('bthome').addEventListener('click', function(){window.scrollTo(0, 0)});
-document.getElementById('btsobre').addEventListener('click', function(){window.scrollTo(0, window.innerHeight)});
+document.getElementById('btsobre').addEventListener('click', function(){window.scrollTo(0, window.innerHeight / 2.000000000000000001)});
 
 function selecionar(x){
 	var selected;
@@ -31,7 +31,7 @@ function doSomething(scroll_pos) {
 	if(window.innerHeight - window.scrollY < 0) sobre.style.top = 0;
 	else sobre.style.top = window.innerHeight - window.scrollY;
 	fundo.style.filter = 'blur('+10*window.scrollY/window.innerHeight+'px)';
-	if(window.scrollY < window.innerHeight * 0.5) selecionar(0);
+	if(window.scrollY < window.innerHeight * 0.49) selecionar(0);
 	else if(window.scrollY < window.innerHeight * 1.5) selecionar(1);
 }
 
